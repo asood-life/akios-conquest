@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./utils/styles.css">
+    <link rel="icon" href="./images/player.png">
+    <title>Akio's Conquest</title>
+</head>
+
+<body>
+    <!-- rocket animation played at start -->
+    <div id="rocket-div"><img id="rocket" src="./images/rocket.gif"></div>
+    >
+    <img id='player-image' src="./images/player.png">
+    <img id='robot-image' src='./images/robot.png'>
+
+    <div id='elements-div'>
+        <h1 id='headline'>Akio's Conquest</h1>
+        <h1 id="tagline">DO YOU HAVE WHAT IT TAKES TO BEAT GALATRON?</h1>
+        <a id='start-btn' href="./utils/planets.html">START</a>
+    </div>
+</body>
+
+<script>
+    // hide rocket animation after 2.5 seconds
+    setTimeout(function () {
+        const rocket = document.getElementById('rocket');
+        rocket.style.opacity = '0';
+        const rocketDiv = document.getElementById('rocket-div');
+        rocketDiv.style.opacity = '0';
+    }, 2500);
+</script>
+
+</html>

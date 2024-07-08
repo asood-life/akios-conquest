@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/Pixeboy-z8XGD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sabo';
+    src: url('../fonts/Sabo-Filled.otf') format('opentype');
+}
+
+body {
+    overflow-y: hidden;
+    background-image: url('../images/back.gif');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 98.86vh;
+    width: 98.86vw;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+/* ---------- Main Page ---------- */
+
+#rocket-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1616;
+    opacity: 1;
+    transition: opacity 3.2s ease;
+    width: 100vw;
+    height: 100%;
+}
+
+#rocket {
+    width: 80vw;
+    height: min(96vw, 100%);
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+#robot-image {
+    height: 25vw;
+    margin: 0;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    left: 88%;
+}
+
+#player-image {
+    height: 30vw;
+    margin: 0;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-40%, -55%);
+    left: 10%;
+}
+
+#elements-div {
+    width: 50vw;
+    height: 100vh;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#elements-div>* {
+    margin: 0;
+}
+
+#headline {
+    font-family: 'sabo';
+    color: #fcc201;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+#tagline {
+    font-family: 'pixel';
+    font-size: 2.2vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#start-btn,
+#start-btn:visited {
+    text-decoration: none;
+    font-family: 'pixel';
+    display: flex;
+    justify-content: center;
+    font-size: 3.2vw;
+    color: white;
+    background-color: #ef4423;
+    width: 15vw;
+    margin: 1vw 34%;
+}
+
+/* ---------- Planets Page ---------- */
+
+#planet-island {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#planet-island img {
+    width: 16.5vw;
+}
+
+.planet-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 15vw;
+    margin: 0 2.5vw;
+}
+
+.planet-div:not(#first-planet-div) {
+    pointer-events: none;
+}
+
+.planet-name {
+    font-family: 'pixel';
+    color: white;
+    font-size: 4.2vw;
+}
+
+/* ---------- Final Page ---------- */
+
+#final-div {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#final-image {
+    width: 36vw;
+}
+
+#final-message {
+    font-family: 'pixel';
+    color: white;
+    font-size: 2.5vw;
+}
+
+#play-again {
+    font-size: 2.5vw;
+    font-weight: 1;
+    border: none;
+    color: #ef4423;
+    font-family: 'pixel';
+    display: block;
+    margin-top: 5vw;
+    width: 15vw;
+    cursor: pointer;
+}
