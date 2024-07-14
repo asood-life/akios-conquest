@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./breakout-styles.css">
+  <link rel="icon" href="../images/player.png">
+  <title>Duex</title>
+</head>
+
+<body style="overflow-y: hidden">
+  <img id='player-image' src="../images/player.png">
+  <img id='robot-image' src='../images/robot.png'>
+
+  <div id='start-box'>
+    <header>Breakout</header>
+    <div>
+      <div id="start-btn">
+        <button>
+          <div class='navigation-btn'>Start</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mainDiv">
+    <canvas id="myCanvas" width="480" height="360"></canvas>
+  </div>
+
+  <div id="result-win-div">
+    <div id=win></div>
+    <div id="next-stage-btn"><button class="navigation-btn">Next Stage</button></div>
+  </div>
+
+  <div id="result-lose-div">
+    <div id='lose'></div>
+    <div id="retry-btn" onclick="window.location.reload()"><button class='navigation-btn'>Retry</button></button></div>
+  </div>
+
+  <script src="./breakout-script.js"></script>
+</body>
+
+</html>

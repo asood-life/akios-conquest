@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Opus</title>
+  <link rel="stylesheet" href="./styles-tic-tac-toe.css">
+  <link rel="icon" href="../images/player.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+    integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body style="overflow-y: hidden">
+  <img id='player-image' src="../images/player.png">
+  <img id='robot-image' src='../images/robot.png'>
+
+  <div>
+    <div id='start-box'>
+      <header>Tic Tac Toe</header>
+      <div>
+        <div id="start-btn">
+          <button>
+            <div class='navigation-btn'>Start</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="board">
+      <div id="details-div">
+        <div id="details">
+          <span>Your Turn</span>
+          <span>Bot's Turn</span>
+          <div id="slider"></div>
+        </div>
+      </div>
+
+      <div id="play-arena">
+        <section>
+          <span class="b1"></span>
+          <span class="b2"></span>
+          <span class="b3"></span>
+        </section>
+        <section>
+          <span class="b4"></span>
+          <span class="b5"></span>
+          <span class="b6"></span>
+        </section>
+        <section>
+          <span class="b7"></span>
+          <span class="b8"></span>
+          <span class="b9"></span>
+        </section>
+      </div>
+    </div>
+
+    <div id="result-div-one">
+      <div id="win"></div>
+      <div id="next-stage-btn"><button class="navigation-btn"
+          onclick="window.location.href = '../utils/planets.html'">Next
+          Stage</button>
+      </div>
+    </div>
+    <div id="result-div-two">
+      <div id="lose"></div>
+      <div id="retry-btn" onclick="window.location.reload()">
+        <button class="navigation-btn">Retry</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script-tic-tac-toe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'pixel';
+  src: url('../fonts/Pixeboy-z8XGD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sabo';
+  src: url('../fonts/Sabo-Filled.otf') format('opentype');
+}
+
+body {
+  font-family: 'pixel';
+  background-image: url(../images/back.gif);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+::selection {
+  color: #fff;
+  background: #30c030;
+}
+
+#robot-image {
+  height: 25vw;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 88%;
+}
+
+#player-image {
+  height: 30vw;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-40%, -55%);
+  left: 10%;
+}
+
+#start-box,
+#board,
+#result-div-one,
+#result-div-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+#start-box {
+  width: 40vw;
+}
+
+#start-box.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#start-box header {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 3.2vw;
+
+}
+
+#start-box .title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+#start-box #start-btn {
+  display: flex;
+  width: 100%;
+}
+
+#start-box .credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#start-box .credit a {
+  color: #30c030;
+  text-decoration: none;
+}
+
+#start-box .credit a:hover {
+  text-decoration: underline;
+}
+
+.navigation-btn {
+  font-family: 'pixel';
+  font-size: 2vw;
+}
+
+#start-btn button {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start-btn button:hover,
+.btn button:hover {
+  transform: scale(0.96);
+}
+
+#start-btn button.playerO {
+  margin-left: 5px;
+}
+
+#board {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+#board.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#board #details-div {
+  padding: 8px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+#board #details {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+#details span {
+  position: relative;
+  z-index: 2;
+  color: #30c030;
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  transition: all 0.3 ease;
+}
+
+#details.active span:first-child {
+  color: #fff;
+}
+
+#details.active span:last-child {
+  color: #30c030;
+}
+
+#details span:first-child {
+  color: #fff;
+}
+
+#details #slider {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  background: #30c030;
+  border-radius: 5px;
+}
+
+#details.active span:first-child {
+  color: #30c030;
+}
+
+#details.active span:nth-child(2) {
+  color: #fff;
+}
+
+#details.active #slider {
+  left: 50%;
+}
+
+#play-arena {
+  margin-top: 20px;
+  width: 29vw;
+}
+
+#play-arena section {
+  display: flex;
+  margin-bottom: 1px;
+}
+
+#play-arena section span {
+  display: block;
+  height: 9.6vw;
+  width: 9.6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  color: #30c030;
+  font-size: 3.6vw;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fff;
+}
+
+#result-div-one {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#result-div-two {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+#result-div-one.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#result-div-two.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#win {
+  color: white;
+  font-size: 2.2vw;
+  width: 35vw;
+}
+
+#result-div-one #win {
+  font-size: 2.2vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#result-div-two #lose {
+  font-size: 2.2vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#result-div-one #win p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#result-div-two #lose p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#result-div-two #retry-btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#retry-btn button {
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#result-div-one #next-stage-btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#next-stage-btn button {
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#lose {
+  font-size: 3.2vw;
+  color: white;
+}

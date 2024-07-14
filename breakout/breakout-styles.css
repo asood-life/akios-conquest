@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('../fonts/Pixeboy-z8XGD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sabo';
+  src: url('../fonts/Sabo-Filled.otf') format('opentype');
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../images/back.gif);
+}
+
+#mainDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#myCanvas {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: 'pixel';
+  background: #eee;
+  padding: 1rem;
+  /* position: fixed;
+  top: 30vh;
+  left: 28%; */
+  width: 40vw;
+}
+
+.cont {
+  font-family: 'sabo';
+  color: #fcc201;
+}
+
+#robot-image {
+  height: 25vw;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 88%;
+}
+
+#player-image {
+  height: 30vw;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-40%, -55%);
+  left: 10%;
+}
+
+#start-box,
+#board,
+#result-win-div,
+#result-lose-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+#start-box {
+  width: 40vw;
+}
+
+#start-box.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#start-box header {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 3.2vw;
+  font-family: 'pixel';
+
+}
+
+#start-box .title {
+  font-size: 2.4vw;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+#start-box #start-btn {
+  display: flex;
+  width: 100%;
+}
+
+#start-box .credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#start-box .credit a {
+  color: #30c030;
+  text-decoration: none;
+}
+
+#start-box .credit a:hover {
+  text-decoration: underline;
+}
+
+.navigation-btn {
+  font-family: 'pixel';
+  font-size: 2vw;
+}
+
+#start-btn button {
+  width: 100%;
+  font-size: 2.2vw;
+  font-weight: 500;
+  padding: 10px 0;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start-btn button:hover,
+.btn button:hover {
+  transform: scale(0.96);
+}
+
+#start-btn button.playerO {
+  margin-left: 5px;
+}
+
+#result-win-div {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+#result-lose-div {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+#result-win-div.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#result-lose-div.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#result-win-div .win {
+  font-size: 2.2vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#result-lose-div #lose {
+  font-size: 2.2vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#result-win-div .win p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#result-lose-div #lose p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#result-lose-div #retry-btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#retry-btn button {
+  font-size: 2vw;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#result-win-div #next-stage-btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#next-stage-btn button {
+  font-size: 2.2vw;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#win {
+  font-family: 'pixel';
+  color: white;
+  font-size: 2.2vw;
+}
+
+#lose {
+  color: white;
+  font-family: 'pixel';
+  font-size: 2.2vw;
+}
