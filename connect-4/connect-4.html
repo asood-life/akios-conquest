@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xamos</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="../images/player.png">
+</head>
+
+<body style="overflow-y: hidden">
+    <img id='player-image' src="../images/player.png">
+    <img id='robot-image' src='../images/robot.png'>
+
+    <div id='start-box'>
+        <header>Connect 4</header>
+        <div>
+            <div id="start-btn">
+                <button>
+                    <div class='navigation-btn'>Start</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="row"></div>
+        <div class="row">
+            <div class="box-left">
+                <div id="coin"></div>
+                <div class="'tocentre">
+                    <table id="game_board" cellpadding="0"></table>
+                </div>
+                <div id="loading">AI is making a Move</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-win-div">
+        <div class="win" id="win"></div>
+        <div id="next-stage-btn"><button onclick="window.location.href = '../utils/planets.html'"
+                class="navigation-btn">Next Stage</button></div>
+    </div>
+    <div id="result-lose-div">
+        <div class="lose" id="lose"></div>
+        <div id="retry-btn">
+            <p><button onclick="Game.restartGame();" type="submit">
+                    <div class='navigation-btn'>Retry</div>
+                </button></p>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/connect-four.js"></script>
+
+    <script>
+        $('#algorithm-select').change(function () {
+            window.location = '../' + $(this).val() + '/index.html';
+        });
+    </script>
+</body>
+
+</html>

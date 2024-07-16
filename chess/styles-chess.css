@@ -1,0 +1,251 @@
+@font-face {
+  font-family: 'pixel';
+  src: url('../fonts/Pixeboy-z8XGD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sabo';
+  src: url('../fonts/Sabo-Filled.otf') format('opentype');
+}
+
+body {
+  font-family: chess;
+  margin: 0;
+  background-image: url(../images/back.gif);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+#robot-image {
+  height: 25vw;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 88%;
+}
+
+#player-image {
+  height: 30vw;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  transform: translate(-40%, -55%);
+  left: 10%;
+}
+
+#start-box,
+#result-win-div,
+#result-lose-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+#start-box {
+  width: 40vw;
+}
+
+#start-box.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#start-box header {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: white;
+  font-size: 3.6vw;
+  font-family: 'pixel';
+}
+
+#start-box .title {
+  font-size: 2.2vw;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+#start-box #start-btn {
+  display: flex;
+  width: 100%;
+}
+
+#start-box .credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+}
+
+#start-box .credit a {
+  color: #30c030;
+  text-decoration: none;
+}
+
+#start-box .credit a:hover {
+  text-decoration: underline;
+}
+
+.navigation-btn {
+  font-family: 'pixel';
+  font-size: 2.2vw;
+}
+
+#start-btn button {
+  width: 100%;
+  font-size: 2.2vw;
+  font-weight: 500;
+  padding: 10px 0;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start-btn button:hover,
+.btn button:hover {
+  transform: scale(0.96);
+}
+
+#start-btn button.playerO {
+  margin-left: 5px;
+}
+
+.container {
+  display: none;
+}
+
+.square {
+  background: #fccc74;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid black;
+  position: absolute;
+}
+
+@media screen and (max-width:1140px) {
+
+  #player-image,
+  #robot-image {
+    display: none;
+  }
+}
+
+#result-win-div {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+#result-lose-div {
+  padding: 25px 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+#result-win-div.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#result-lose-div.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#win {
+  color: white;
+  font-size: 2.2vw;
+}
+
+#result-win-div #win {
+  font-size: 2.2vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#result-lose-div #lose {
+  font-size: 2.2vw;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+#result-win-div #win p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#result-lose-div #lose p {
+  font-weight: 600;
+  margin: 0 5px;
+}
+
+#result-lose-div #retry-btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#retry-btn button {
+  font-size: 2.2vw;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#result-win-div #next-stage-btn {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#next-stage-btn button {
+  font-size: 2.2vw;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  background: #30c030;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#lose {
+  color: white;
+  font-size: 2.2vw;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Icrozar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles-chess.css">
+  <link rel="icon" href="../images/player.png">
+</head>
+
+<body style="overflow-y: hidden">
+  <img id='player-image' src="../images/player.png">
+  <img id='robot-image' src='../images/robot.png'>
+
+  <div id='start-box'>
+    <header>Chess</header>
+    <div>
+      <div id="start-btn">
+        <button>
+          <div class='navigation-btn'>Start</div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class='container' id="container"></div>
+
+  <div id="result-win-div">
+    <div class="win" id="win"></div>
+    <div id="next-stage-btn"><button class="navigation-btn"
+        onclick="window.location.href = '../utils/win-page.html'">Next</button></div>
+  </div>
+  <div id="result-lose-div">
+    <div class="lose" id="lose"></div>
+    <div id="retry-btn">
+      <p><button onclick="Game.restartGame();" type="submit">
+          <div class='navigation-btn'>Retry</div>
+        </button></p>
+    </div>
+  </div>
+  <script src="./script-chess.js"></script>
+</body>
+
+</html>

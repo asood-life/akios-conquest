@@ -1,0 +1,497 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/Pixeboy-z8XGD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sabo';
+    src: url('../fonts/Sabo-Filled.otf') format('opentype');
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: 'Arial';
+    overflow-y: hidden;
+    background-image: url(../images/back.gif);
+    overflow-x: hidden;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#robot-image {
+    height: 25vw;
+    margin: 0;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 88%;
+}
+
+#player-image {
+    height: 30vw;
+    margin: 0;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-40%, -55%);
+    left: 10%;
+}
+
+#start-box,
+#board,
+#result-div-one,
+#result-div-two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+#start-box {
+    width: 40vw;
+}
+
+#start-box.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#start-box header {
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 3.2vw;
+    font-family: 'pixel';
+}
+
+#start-box .title {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+#start-box #start-btn {
+    display: flex;
+    width: 100%;
+}
+
+.navigation-btn {
+    font-family: 'pixel';
+}
+
+#start-btn button {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+    border: none;
+    background: #30c030;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#start-btn button:hover,
+.btn button:hover {
+    transform: scale(0.96);
+}
+
+#start-btn button.playerO {
+    margin-left: 5px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    display: none;
+    height: 100vh;
+}
+
+.box-left {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game_board {
+    border-collapse: collapse;
+    border: 5px solid white;
+}
+
+.ticfont {
+    font-family: 'pixel';
+    color: white;
+}
+
+#coinfeld {
+    position: relative;
+    width: 100%;
+    height: px;
+}
+
+#game_board td {
+    border: 0.5px solid white;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#coin {
+    position: absolute;
+    display: none;
+    left: 0px;
+    top: 0px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+
+#game_board .coin {
+    cursor: default;
+}
+
+#game_board tr {
+    width: 100%;
+    height: 100%;
+}
+
+#game_board .human-coin,
+.human-coin {
+    border-radius: 50%;
+    background: yellow;
+}
+
+#game_board .cpu-coin,
+.cpu-coin {
+    border-radius: 50%;
+    background: #DC143C;
+}
+
+#game_board .win {
+    border-radius: 50%;
+    animation: animationFrames 1s infinite;
+    -webkit-animation: animationFrames 1s infinite;
+    -moz-animation: animationFrames 1s infinite;
+    -o-animation: animationFrames 1s infinite;
+    -ms-animation: animationFrames 1s infinite;
+}
+
+@keyframes animationFrames {
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animationFrames {
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes animationFrames {
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes animationFrames {
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#debug {
+    margin-top: 10px;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-right {
+    margin: 20px 10px 10px 0;
+    float: left;
+    text-align: center;
+}
+
+.box-left {
+    position: relative;
+    margin: 10px 10px 10px 0;
+    float: left;
+}
+
+#options {
+    font-size: 13px;
+}
+
+input {
+    border: 1px solid #808080;
+    margin: 1px;
+    outline: none;
+}
+
+.input {
+    width: 20px;
+}
+
+#loading {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 10px;
+    background: #DC143C;
+    color: #fff;
+    padding: 4px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-top: 10px;
+}
+
+select {
+    background: #fff;
+    margin: 1px;
+    border: 1px solid #808080;
+    outline: none;
+    width: 140px;
+}
+
+.text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #4C4C4C;
+}
+
+.text a {
+    color: #333;
+}
+
+.header-text {
+    margin-bottom: 5px !important;
+    margin-left: 2px !important;
+}
+
+.subheader-text {
+    margin-left: 3px !important;
+}
+
+#navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #333;
+    width: 100%;
+    color: #fff;
+    font-size: 11px;
+}
+
+#navigation .title {
+    padding: 5px 0px 6px 4px;
+}
+
+#navigation a {
+    display: inline-block;
+    padding: 5px 0px;
+    color: #fff;
+    font-size: 11px;
+}
+
+#navigation a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 880px) {
+
+    #player-image,
+    #robot-image {
+        display: none;
+    }
+}
+
+#result-win-div {
+    padding: 25px 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+#result-lose-div {
+    padding: 25px 20px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+#result-win-div.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#result-lose-div.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#result-win-div .win {
+    font-size: 2.2vw;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'pixel';
+}
+
+#result-lose-div .lose {
+    font-size: 2.2vw;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'pixel';
+}
+
+#result-win-div .win p {
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+#result-lose-div .lose p {
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+#result-lose-div #retry-btn {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#retry-btn button {
+    font-size: 2.2vw;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    background: #30c030;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#result-win-div #next-stage-btn {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#next-stage-btn button {
+    font-size: 2.2vw;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    background: #30c030;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.playerimg {
+    margin: 0;
+    position: fixed;
+    z-index: -999;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.strtbx,
+.board,
+#result-win-div,
+#result-lose-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.navigation-btn {
+    font-family: 'pixel';
+    font-size: 2.2vw;
+}
