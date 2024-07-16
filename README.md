@@ -134,5 +134,5 @@
 </div>
 <hr>
 <div>
-    Thank you for taking the time to explore this project! If you find it valuable, please consider giving it a ⭐ star. Your support is appreciated and helps others discover the project. Should you have any enhancement requests or encounter a bug, please report it in the <a href="https://github.com/asood-life/akios-conquest/issues">Issues</a> section. Your feedback is crucial in improving this project for everyone.
+    Thank you for taking the time to go through this project! If you find it valuable, please consider giving it a ⭐ star. Your support is appreciated and helps others in discovering the project. Should you have any enhancement requests or encounter a bug, please report it in the <a href="https://github.com/asood-life/api-rate-warden/issues">Issues</a> section. Your feedback is crucial in improving this project for all.
 </div>
