@@ -21,7 +21,7 @@
 </table>
 
 <h3 id="overview">Overview</h3>
-<b>Akio's Conquest</b> is a web application developed for submission to the <b>Snakes and Hackers II</b> Hackathon organized by MLH, where it bagged the <B>First Prize</b>. It provides users with an opportunity to engage in an immersive gaming experience, featuring the traditionals <b>Tic Tac Toe, Breakout, Connect-4 and Chess</b> with increasing complexities as you progress through each game.
+<b>Akio's Conquest</b> is a web application developed for submission to the <b>Snakes and Hackers II</b> Hackathon organized by MLH, where it bagged the <B>First Prize</b>. It provides users with an opportunity to engage in an immersive gaming experience, featuring the traditionals <b>Tic Tac Toe, Breakout, Connect Four and Chess</b> with increasing complexities.
 <br><br>
 <table>
    <tr>
@@ -79,7 +79,7 @@
 </div>
 <br>
 <div>
-   Once you has won all the games and proven your mettle against Galatron on each planet, you will be greeted with the following page.<br><br>
+   Once you has won all the games and proven your mettle against Galatron on each planet, you will be greeted with.<br><br>
 </div>
 <img src="./images/win-page.png">
 
@@ -101,26 +101,19 @@
    <li>Access the web application using the following link: <a href="https://asood-life.github.io/akios-conquest">https://asood-life.github.io/akios-conquest</a>.
    </li>
    <li>
-      Click the <b>START</b> button on the home page to begin the expedition. Click on <b>Opus</b>, where you will face Galatron in a game of <b>Tic Tac Toe</b>.
-   </li>
-   <li> 
-      Once you win in Tic Tac Toe, progress to the next planets <b>Duex, Xamos, and Icrozar</b> in order, where you will compete against Galatron in <b>Breakout, Connect-4, and Chess</b>.
-   </li>
-   <li>
-      After defeating Galatron in all games, you will be redirected to the final page highlighting your win over Galatron.
-   </li>
+      Click the <b>START</b> button on the home page to begin the expedition.
 </ul>
 
 <h3 id="future-work">Future Work</h3>
 <ul>
    <li>
-      <b> Visual and Audio Effects</b> : Elevate the thrill of expedition with immersive visual effects and audio enhancements. This includes integration of high-quality graphics, animations, and sound effects that create a more engaging and realistic experience for users. By enhancing the sensory elements, participants will feel more immersed in the expedition, leading to a more enjoyable and memorable experience.
+      <b> Visual and Audio Effects</b> : Integration of high-quality graphics, animations, and sound effects that creates a realistic experience.
    </li>
    <li>
-      <b>Interactive Elements</b> : Incorporate interactive elements such as timed puzzles and pattern recognition tasks to engage users. These features will make the expedition more dynamic, encouraging active participation and critical thinking. Timed puzzles can add a sense of urgency and challenge, while pattern recognition tasks can stimulate cognitive skills and keep yous invested throughout the expedition.
+      <b>Interactive Elements</b> : Incorporate interactive elements such as timed puzzles and pattern recognition tasks.
    </li>
    <li>
-      <b>Expanded Game Choices</b> : Heighten the adventure by incorporating an extensive array of additional games. By offering a wider variety of games, participants can explore different challenges and experiences, catering to diverse interests and skill levels. This expansion will ensure that there is something for everyone, increasing the overall appeal and replayability of the expedition.
+      <b>Expanded Game Choices</b> : Accomodate a diverse array of additional games.
    </li>
 </ul>
 
@@ -141,5 +134,5 @@
 </div>
 <hr>
 <div>
-    Thank you for reading through! If you find value in this project, please consider giving it a ⭐ star. Your support is greatly appreciated and assists others discover the project. If you have any requests for enhancements or find any bugs, please report them under <a href="https://github.com/asood-life/akios-conquest/issues">Issues</a>. Your feedback is invaluable in making this project better for everyone.
+    Thank you for taking the time to explore this project! If you find it valuable, please consider giving it a ⭐ star. Your support is appreciated and helps others discover the project. Should you have any enhancement requests or encounter a bug, please report it in the <a href="https://github.com/asood-life/akios-conquest/issues">Issues</a> section. Your feedback is crucial in improving this project for everyone.
 </div>
