@@ -107,7 +107,7 @@
 <h3 id="future-work">Future Work</h3>
 <ul>
    <li>
-      <b> Visual and Audio Effects</b> : Integration of high-quality graphics, animations, and sound effects that creates a realistic experience.
+      <b> Visual and Audio Effects</b> : Integration of high-quality graphics, animations, and sound effects.
    </li>
    <li>
       <b>Interactive Elements</b> : Incorporate interactive elements such as timed puzzles and pattern recognition tasks.
