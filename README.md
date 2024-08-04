@@ -11,7 +11,7 @@
 
 <h3 id="introduction">Introduction</h3>
 <div>
-   Once upon a time, in a small village, an unwelcome visitor arrived - <b>Galatron</b>, a formidable extraterrestrial robot. With a strong grip, he seized the village's most cherished treasures - their beloved board games. As sadness engulfed the village, a brave hero emerged from the shadows – <b>Akio</b>, a warrior determined to venture on a noble mission. His goal? To reclaim the stolen games from the clutches of Galatron. To achieve this daring feat, Akio must outwit Galatron in four games scattered across different planets: <b>Xamos, Opus, Icrozar and Duex</b>. With each victory, he inches closer to restoring joy to his village. Can Akio muster the courage to triumph over Galatron and restore the cherished games to their rightful place? Only time will unveil the outcome of this epic expedition.
+   Once upon a time, in a small village, an unwelcome visitor arrived - <b>Galatron</b>, a formidable extraterrestrial robot. With a strong grip, he seized the village's most cherished treasures - their beloved board games. As sadness engulfed the village, a brave hero emerged from the shadows – <b>Akio</b>, a warrior determined to venture on a noble mission. His goal? To reclaim the stolen games from the clutches of Galatron. To achieve this daring feat, Akio must outwit Galatron in four games scattered across different planets: <b>Xamos, Opus, Icrozar and Duex</b>. With each victory, he inches closer to restoring joy to his village. Can Akio muster the courage to triumph over Galatron and restore the cherished games to their rightful place? Only time will unveil the outcome of this ecstatic expedition.
 </div><br>
 
 <table>
@@ -21,7 +21,7 @@
 </table>
 
 <h3 id="overview">Overview</h3>
-<b>Akio's Conquest</b> is a web application developed for submission to the <b>Snakes and Hackers II</b> Hackathon organized by MLH, where it bagged the <B>First Prize</b>. It empowers users with an opportunity to engage in an immersive gaming experience, featuring the classics <b>Tic Tac Toe, Breakout, Connect Four and Chess</b>.
+<b>Akio's Conquest</b> is a web application built for submission to the <b>Snakes and Hackers II</b> Hackathon organized by MLH, where it bagged the <B>First Prize</b>. It empowers users with an opportunity to engage in an immersive gaming experience, featuring the classics <b>Tic Tac Toe, Breakout, Connect Four and Chess</b>.
 <br><br>
 <table>
    <tr>
@@ -31,7 +31,7 @@
 
 <h3 id="implementation">Implementation</h3>
 <div>
-   The conquest features four games which are crafted using fundamental web development technologies, i.e. <b>HTML, CSS, JavaScript and jQuery</b>. In the case of <b>Tic Tac Toe</b>, the bot's moves are generated with a more random approach, making the gameplay less predictable. This randomness adds an element of enjoyment for beginners, as the bot's strategy is not always optimal, resulting in a more varied and relaxed gaming experience.<br><br>
+   The conquest features four games which are crafted using fundamental web development technologies, that is <b>HTML, CSS, JavaScript and jQuery</b>. In the case of <b>Tic Tac Toe</b>, the bot's moves are generated with a more random approach, making the gameplay less predictable. This randomness adds an element of enjoyment for beginners, as the bot's strategy is not always optimal, resulting in a more varied gaming experience.<br><br>
 
    On the other hand, <b>Connect-4 and Chess</b> employ a more sophisticated strategy to elevate the gameplay. Both games leverage the <b>Minimax Algorithm</b>, a decision-making algorithm tailored for determining the best possible move for the current player. This algorithm operates under the assumption that the opponent will also make optimal moves, thus seeking to minimize the maximum potential loss. This strategic depth creates a challenging environment for players as the bot's moves are calculated to maximize its chances of winning.
 </div>
@@ -66,11 +66,11 @@
 <div>
    <h4>Minmax Algorithm (Alpha - Beta Pruning)</h4>
    <div>
-      The Minimax Algorithm is a renowned decision-making technique employed in two-player games. It traverses the <b>game tree</b>, assessing potential moves until reaching <b>terminal states</b> like victory, defeat or draw. At these endpoints, it assigns <b>scores</b> to denote the outcome for each player. The algorithm prioritizes selecting the move that maximizes the outcome for one player while minimizing it for the opponent. This strategic approach enables optimal decision-making by meticulously considering potential future outcomes.
+      The Minimax Algorithm is a renowned decision-making technique employed in two-player games. It traverses the <b>game tree</b>, assessing potential moves until reaching <b>terminal states</b> like victory, defeat or draw. At these endpoints, it assigns <b>scores</b> to denote the outcome for each player. The algorithm prioritizes selecting the move that maximizes the outcome for one player while minimizing it for opponent. This strategic approach enables optimal decision-making by meticulously considering potential future outcomes.
    </div>
    <br>
    <div>
-      The algorithm seeks to maximize the player's winning prospects while minimizing the opponent's. However navigating through the exhaustive game tree can incur substantial computational costs in intricate games such as Chess. Enter <b>alpha-beta pruning</b>, a clever optimization strategy. By <b>selectively trimming branches of the game tree</b> that offer inferior outcomes, alpha-beta pruning markedly <b>shrinks the search space</b> without sacrificing the algorithm's performance. This refined method upholds the Minmax's fundamental principles while enhancing its performance, resulting in a much faster and more nuanced decision-making within strategic gaming environments.
+      The algorithm seeks to maximize the player's winning prospects while minimizing the opponent's. However navigating through the exhaustive game tree can incur substantial computational costs in intricate games such as Chess. Enter <b>alpha-beta pruning</b>, a clever optimization strategy. By <b>selectively trimming branches of the game tree</b> that offer inferior outcomes, alpha-beta pruning markedly <b>shrinks the search space</b> without sacrificing algorithm's performance. This refined method upholds the Minmax's fundamental principles while enhancing its performance, resulting in a more nuanced decision-making within strategic gaming environments.
    </div>
    <br>
    <div>
