@@ -21,7 +21,7 @@
 </table>
 
 <h3 id="overview">Overview</h3>
-<b>Akio's Conquest</b> is a web application built for submission to the <b>Snakes and Hackers II</b> Hackathon organized by MLH, where it bagged the <B>First Prize</b>. It empowers users with an opportunity to engage in an immersive gaming experience, featuring the classics <b>Tic Tac Toe, Breakout, Connect Four and Chess</b>.
+<b>Akio's Conquest</b> is a web application built for submission to the <b>Snakes and Hackers II</b> Hackathon organized via MLH, where it bagged the <B>First Prize</b>. It empowers users with an opportunity to engage in an immersive gaming experience, featuring the classics <b>Tic Tac Toe, Breakout, Connect Four and Chess</b>.
 <br><br>
 <table>
    <tr>
