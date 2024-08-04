@@ -11,7 +11,7 @@
 
 <h3 id="introduction">Introduction</h3>
 <div>
-   Once upon a time, in a small village, an unwelcome visitor arrived - <b>Galatron</b>, a formidable extraterrestrial robot. With a strong grip, he seized the village's most cherished treasures - their beloved board games. As sadness engulfed the village, a brave hero emerged from the shadows – <b>Akio</b>, a warrior determined to venture on a noble mission. His goal? To reclaim the stolen games from the clutches of Galatron. To achieve this daring feat, Akio must outwit Galatron in four games scattered across different planets: <b>Xamos, Opus, Icrozar and Duex</b>. With each victory, he inches closer to restoring joy to his village. Can Akio muster the courage to triumph over Galatron and restore the cherished games to their rightful place? Only time will unveil the outcome of this ecstatic expedition.
+   Once upon a time, in a small village, an unwelcome visitor arrived - <b>Galatron</b>, a formidable extraterrestrial robot. With a strong grip, he seized the village's most cherished treasures - their beloved board games. As sadness engulfed the village, a brave hero emerged from the shadows – <b>Akio</b>, a warrior determined to venture on a noble mission. His goal? To reclaim the stolen games from the clutches of Galatron. To achieve this daring feat, Akio must outwit Galatron in four games scattered across different planets: <b>Xamos, Opus, Icrozar and Duex</b>. With each victory, he inches closer to restoring joy to his village. Can Akio muster the courage to triumph over Galatron and restore the cherished games to their rightful place? Only time will unveil the outcome of this expedition.
 </div><br>
 
 <table>
